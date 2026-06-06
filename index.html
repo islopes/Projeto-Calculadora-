@@ -15,9 +15,9 @@
     <div class="calculator">
         <div class="display" id="display"></div>
         <div class="buttons">
-            <button class="button ligth-gray" onclick="clearDisplay()">AC</button>
-            <button class="button ligth-gray" onclick="appendOperation('%')">%</button>
-            <button class="button ligth-gray" onclick="appendOperation('.')">.</button>
+            <button class="button ligth" onclick="clearDisplay('excluir')"><</button>
+            <button class="button ligth " onclick="clearDisplay('ac')">AC</button>
+            <button class="button ligth" onclick="appendOperation('%')">%</button>
             <button class="button orange" onclick="appendOperation('/')">/</button>
             <button class="button dark gray" onclick="appendNumber('7')">7</button>
             <button class="button dark gray" onclick="appendNumber('8')">8</button>
@@ -31,12 +31,14 @@
             <button class="button dark gray" onclick="appendNumber('2')">2</button>
             <button class="button dark gray" onclick="appendNumber('3')">3</button>
             <button class="button orange" onclick="appendOperation('+')">+</button>
-            <button class="button dark-gray wide" onclick="appendNumber('0')">0</button>
+            <button class="button dark gray" onclick="appendOperation('+/_')">+/_</button>
+            <button class="button dark gray" onclick="appendNumber('0')">0</button>   
+            <button class="button dark gray" onclick="appendOperation (',')">,</button>
             <button class="button orange" onclick="calculate()">=</button>
 
 
         </div>
-    </div>>
+    </div>
 
     <script src="./script.js"></script>
 
